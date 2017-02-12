@@ -1,0 +1,28 @@
+@import '~style/config';
+.mainLayout {
+    height: 100%;
+    .sider {
+        background-color: @theme-color-light;
+    }
+    .maInSider {
+        overflow-y: scroll;
+    }
+}
+
+:global {
+.layout-enter.layout-enter-active {
+  opacity: 1;
+  transform: translateX(0em);
+}
+
+
+.layout-leave {
+  transform: translateX(-200rem);
+  transition: all .5s ease-in;
+}
+
+.layout-leave.layout-leave-active {
+  opacity: 0.00;
+}
+
+}

@@ -1,0 +1,37 @@
+{
+	"extends": "eslint-config-ali",
+	"parserOptions": {
+    "ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+      "jsx": true,
+			"modules": true
+    }
+  },
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true,
+		"node": true,
+		"mocha": true,
+		"es6":true
+	},
+	"plugins":[
+		"react"
+	],
+	"rules": {
+		/* enforce consistent indentation */
+		"indent": ["error", 2],
+		/* enforce the consistent use of either backticks, double, or single quotes */
+		"quotes": ["error", "single"],
+		/* disallow the use of console */
+		"no-console": "off",
+		/* disallow the use of debugger */
+		"no-debugger": "error",
+		/* require or disallow semicolons instead of ASI */
+		"semi": "error",
+		/* disallow unused variables */
+		"no-unused-vars": "off",
+		"no-undef": "warn",
+		"react/jsx-uses-react":1
+	}
+}
